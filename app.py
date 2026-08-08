@@ -27,18 +27,24 @@ if st.button("Click to Open Your Surprise"):
     
     st.markdown("""
     > ### 🎈 Dear Vijay,
-    > Happy Birthday brooo..! From cracking your M.Tech to making your dream of a Ph.D. in the USA a reality, I know you're going to achieve it all.
-    > 
-    > May your research papers get accepted, your code compile error-free, and your journey to becoming 'Professor Vijay' be smooth and successful! Keep shining and pushing forward! 🎓🇺🇸🚀
+    > **Happiest Birthday, brooo!** 🥳🎂
+    >
+    > You're in your final year of M.Tech now, and this is just the launchpad for massive things ahead! May you crush your remaining M.Tech semesters, get all your research papers accepted without endless revisions, and turn that big dream of pursuing a Ph.D. in the USA into reality! 🎓🇺🇸🚀
+    >
+    > May your Python code compile on the first try, your datasets never corrupt, and... most importantly, **may you finally find a partner who can actually survive listening to all your endless research talks without falling asleep!** 😂❤️ *(Or at least someone who pretends your algorithms are fascinating! 🤫)*
+    >
+    > Keep grinding, keep dreaming big, and keep leveling up. One day, we’ll all be pointing at you and proudly flexing: **“Yep, that’s Professor Vijay right there!”** 😎👨‍🏫
+    >
+    > Have an incredible day and an unforgettable year ahead, bro! 🎂✨
     """)
     st.snow()
 
 st.divider()
 
-# Photo Gallery Section
+# Photo Gallery Section (Cloud & Local Compatible)
 st.subheader("📸 Memories & Good Times")
 
-# Searches the current root directory (works both locally AND on Streamlit Cloud!)
+# Looks inside the GitHub root folder where images are uploaded
 folder_path = "."
 
 valid_extensions = ('.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG')
@@ -52,7 +58,7 @@ if image_files:
         except Exception as e:
             st.error(f"Could not load image {img_file}: {e}")
 else:
-    st.info("No images uploaded yet.")
+    st.info("No images uploaded yet. Upload your photos to GitHub to display them here!")
 
 st.divider()
 st.caption("Designed with ❤️ using Python & Streamlit")
