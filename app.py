@@ -31,7 +31,7 @@ if st.button("Click to Open Your Surprise"):
     >
     > You're in your final year of M.Tech now, and this is just the launchpad for massive things ahead! May you crush your remaining M.Tech semesters, get all your research papers accepted without endless revisions, and turn that big dream of pursuing a Ph.D. in the USA into reality! 🎓🇺🇸🚀
     >
-    > May your Python code compile on the first try, your datasets never corrupt, and... most importantly, **may you finally find a partner who can actually survive listening to all your endless research talks without falling asleep!** 😂❤️ *(Or at least someone who pretends your algorithms are fascinating! 🤫)*
+    > May your Python code compile on the first try, your datasets never corrupt, and... most importantly, **may you finally turn your crush into your partner and can actually survive listening to all your endless research talks without falling asleep!** 😂❤️ *(Or at least someone who pretends your algorithms are fascinating! 🤫)*
     >
     > Keep grinding, keep dreaming big, and keep leveling up. One day, we’ll all be pointing at you and proudly flexing: **“Yep, that’s Professor Vijay right there!”** 😎👨‍🏫
     >
