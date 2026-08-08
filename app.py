@@ -5,7 +5,7 @@ from PIL import Image
 
 # Page Configuration
 st.set_page_config(
-    page_title="Happy Birthday VijayKedhar!",
+    page_title="Happy Birthday Vijay!",
     page_icon="🎂",
     layout="centered"
 )
@@ -14,7 +14,7 @@ st.set_page_config(
 st.balloons()
 
 # Header
-st.title("🎉 Happy Birthday, VijayKedhar! 🎂")
+st.title("🎉 Happy Birthday, Vijay! 🎂")
 st.write("### *Built entirely in Python, just for you!*")
 st.divider()
 
@@ -35,25 +35,24 @@ if st.button("Click to Open Your Surprise"):
 
 st.divider()
 
-# Photo Gallery Section for Multiple Images
+# Photo Gallery Section
 st.subheader("📸 Memories & Good Times")
 
-folder_path = r"C:\Python\hbdvijay"
+# Searches the current root directory (works both locally AND on Streamlit Cloud!)
+folder_path = "."
 
-# Find all image files in the folder (.png, .jpg, .jpeg)
 valid_extensions = ('.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG')
-image_files = [f for f in os.listdir(folder_path) if f.endswith(valid_extensions)] if os.path.exists(folder_path) else []
+image_files = [f for f in os.listdir(folder_path) if f.endswith(valid_extensions)]
 
 if image_files:
     for img_file in image_files:
-        full_img_path = os.path.join(folder_path, img_file)
         try:
-            image = Image.open(full_img_path)
+            image = Image.open(img_file)
             st.image(image, caption=f"Memory: {img_file}", width="stretch")
         except Exception as e:
             st.error(f"Could not load image {img_file}: {e}")
 else:
-    st.info("No images found in C:\\Python\\hbdvijay folder.")
+    st.info("No images uploaded yet.")
 
 st.divider()
 st.caption("Designed with ❤️ using Python & Streamlit")
